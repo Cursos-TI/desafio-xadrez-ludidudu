@@ -2,6 +2,7 @@
 
 int main(){
 
+    int x = 1, y = 1;
     int bispo = 1, rainha = 1;
 
     for (int torre = 1; torre <= 5; torre++) {
@@ -25,7 +26,23 @@ int main(){
     do {
         printf("\nA rainha se moveu para esquerda %d ", rainha);
         rainha++;
-    } while (rainha <= 8);
+    } while (rainha <= 8); 
+
+    for (int i = 1; i < 2; i++){
+        for (int j = 1; j <= 2; j++){
+            printf("esquerda\n");
+        }
+        printf("baixo\n");
+    }
+
+    do {
+        do {
+            printf("\nEsquerda \n");
+            y++;
+        } while (y <= 2);
+        printf("\nBaixo \n");
+        x++;
+    } while (x < 2);
 
     return 0;
 
